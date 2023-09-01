@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.StartingController">
+<fx:include source="meni.fxml" />
+   <ImageView fx:id="imageView" fitHeight="290.0" fitWidth="288.0" layoutX="34.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+   <Label layoutX="350.0" layoutY="94.0" prefHeight="284.0" prefWidth="326.0" text="Dobrodosli na stranicu PetShop" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="49.0" />
+      </font>
+   </Label>
+</AnchorPane>

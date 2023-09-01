@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.CartController">
+<fx:include source="meni.fxml" />
+   <Label fx:id="userName" layoutX="66.0" layoutY="123.0" text="Label">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <ListView fx:id="transactionListView" layoutX="274.0" layoutY="123.0" prefHeight="308.0" prefWidth="318.0" />
+</AnchorPane>

@@ -1,0 +1,16 @@
+1
+Zagreb
+HRVATSKA
+10000
+2
+Varazdin
+HRVATSKA
+10100
+4
+hrvatska
+JAKOPLJE
+10000
+5
+Cvjetno
+HRVATSKA
+12003

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.SearchCategoriesController">
+<fx:include source="meni.fxml" />
+   <TableView fx:id="categoryTableColumn" layoutX="144.0" layoutY="81.0" prefHeight="375.0" prefWidth="491.0">
+     <columns>
+       <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+       <TableColumn fx:id="name" prefWidth="195.0" text="Naziv" />
+         <TableColumn fx:id="description" prefWidth="287.0" text="Opis" />
+     </columns>
+   </TableView>
+   <Button layoutX="37.0" layoutY="206.0" mnemonicParsing="false" onAction="#deleteCategory" prefHeight="25.0" prefWidth="67.0" text="Obrisi" />
+   <Button layoutX="37.0" layoutY="269.0" mnemonicParsing="false" onAction="#updateCategory" text="Promijeni" />
+</AnchorPane>

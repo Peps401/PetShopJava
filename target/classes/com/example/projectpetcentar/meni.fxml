@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.MeniController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Ducani">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#searchStores" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newStore" text="Novo" />
+                  <MenuItem mnemonicParsing="false" onAction="#newAddress" text="Nova adresa" />
+                  <MenuItem mnemonicParsing="false" onAction="#newCity" text="Novi grad" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Skladiste">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#searchStorage" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newStorage" text="Novo" />
+                  <MenuItem mnemonicParsing="false" onAction="#addToShhelf" text="Dodaj na police" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Sefovi">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#searchBosses" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newBoss" text="Novo" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Radnici">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#searchWorkers" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newWorker" text="Novo" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Proizvodi">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#searchItems" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newItem" text="Novo" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Kategorije">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#searchCategories" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#newCategory" text="Novo" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Popusti">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#searchDiscount" text="Pretraga" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Prijava">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#LogIn" text="Log in" />
+                  <MenuItem mnemonicParsing="false" onAction="#SignUp" text="Sign up" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Kupnja">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Buy" text="Kupi" />
+                <MenuItem mnemonicParsing="false" onAction="#BuyCart" text="Kosarica" />
+                  <MenuItem mnemonicParsing="false" onAction="#SeeAllTransactions" text="Pregled svih transakcija" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logs">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#SeeAllChanges" text="Pretraga svih promjena" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projectpetcentar.PopustiController"
+            prefHeight="400.0" prefWidth="600.0">
+<fx:include source="meni.fxml"></fx:include>
+    <TableView fx:id="tableView" layoutX="283.0" layoutY="113.0" prefHeight="316.0" prefWidth="365.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="29.0" text="Id" />
+            <TableColumn fx:id="nameColumn" prefWidth="78.0" text="Naziv" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="112.0" text="Opis" />
+            <TableColumn fx:id="categoryColumn" prefWidth="79.0" text="Kategorija" />
+            <TableColumn fx:id="priceColumn" prefWidth="77.0" text="Cijena" />
+        </columns>
+    </TableView>
+    <Label layoutX="34.0" layoutY="146.0" text="Danas na popustu su :">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+</AnchorPane>

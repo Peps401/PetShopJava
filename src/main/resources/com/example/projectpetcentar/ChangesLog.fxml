@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.ChangesLogController">
+   <fx:include source="meni.fxml" />
+   <TableView fx:id="changesTableView" layoutX="43.0" layoutY="76.0" prefHeight="391.0" prefWidth="614.0">
+     <columns>
+       <TableColumn fx:id="oldDataColumn" prefWidth="203.0" text="Stare vrijednosti" />
+       <TableColumn fx:id="newDataColumn" minWidth="0.0" prefWidth="174.0" text="Nove vrijednosti" />
+         <TableColumn fx:id="userColumn" prefWidth="111.0" text="Korisnik" />
+         <TableColumn fx:id="timeColumn" prefWidth="124.0" text="Vrijeme" />
+     </columns>
+   </TableView>
+</AnchorPane>

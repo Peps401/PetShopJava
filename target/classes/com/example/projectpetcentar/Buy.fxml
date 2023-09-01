@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectpetcentar.BuyController">
+<fx:include source="meni.fxml" />
+   <TableView fx:id="tableView" layoutX="34.0" layoutY="79.0" prefHeight="316.0" prefWidth="365.0">
+      <columns>
+         <TableColumn fx:id="idColumn" prefWidth="29.0" text="Id" />
+         <TableColumn fx:id="nameColumn" prefWidth="78.0" text="Naziv" />
+         <TableColumn fx:id="descriptionColumn" prefWidth="112.0" text="Opis" />
+         <TableColumn fx:id="categoryColumn" prefWidth="79.0" text="Kategorija" />
+         <TableColumn fx:id="priceColumn" prefWidth="77.0" text="Cijena" />
+      </columns>
+   </TableView>
+   <TextField fx:id="price" layoutX="576.0" layoutY="335.0" prefHeight="25.0" prefWidth="88.0" />
+   <Label layoutX="479.0" layoutY="79.0" text="Vasa kosarica" />
+   <ListView fx:id="chosenItemList" layoutX="471.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+   <Label layoutX="529.0" layoutY="339.0" text="Iznos" />
+   <Button layoutX="168.0" layoutY="421.0" mnemonicParsing="false" onAction="#addInCart" text="Dodaj u kosaru" />
+   <Button fx:id="button" layoutX="537.0" layoutY="421.0" mnemonicParsing="false" onAction="#buy" text="Kupi" />
+</AnchorPane>
